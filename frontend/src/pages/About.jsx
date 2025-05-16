@@ -1,6 +1,7 @@
 import React from 'react';
 import Title from '../components/Title';
 import { assets } from '../assets/assets';
+import NewsletterBox from '../components/NewsletterBox';
 
 const About = () => {
   return (
@@ -25,19 +26,22 @@ const About = () => {
     <div className='flex flex-col md:flex-row text-sm mb-20'>
         <div className='border px-10 md:px-16 py-8 sm:py-20 flex flex-col gap-5'>
             <b>Quality Assurance:</b>
-            <p>At TrendHive, quality is our top priority. We ensure that every trend, product, or insight we share is thoroughly researched, relevant, and curated with care. Our commitment to excellence helps our audience trust and rely on us for accurate, stylish, and meaningful content.</p>
+            <p className='text-gray-600'>At TrendHive, quality is our top priority. We ensure that every trend, product, or insight we share is thoroughly researched, relevant, and curated with care. Our commitment to excellence helps our audience trust and rely on us for accurate, stylish, and meaningful content.</p>
         </div>
 
         <div className='border px-10 md:px-16 py-8 sm:py-20 flex flex-col gap-5'>
             <b>Convenience:</b>
-            <p>At TrendHive, convenience is at the core of our experience. We deliver the latest trends in fashion, tech, and lifestyle in a simple, accessible, and user-friendly way, saving you time while keeping you effortlessly updated.</p>
+            <p className='text-gray-600'>At TrendHive, convenience is at the core of our experience. We deliver the latest trends in fashion, tech, and lifestyle in a simple, accessible, and user-friendly way, saving you time while keeping you effortlessly updated.</p>
         </div>
 
         <div className='border px-10 md:px-16 py-8 sm:py-20 flex flex-col gap-5'>
             <b>Exceptional Customer Services:</b>
-            <p>TrendHive is known for its exceptional customer service, offering quick responses, personalized assistance, and a commitment to customer satisfaction. Whether it's product inquiries, returns, or support, TrendHive ensures a smooth and positive experience.</p>
+            <p className='text-gray-600'>TrendHive is known for its exceptional customer service, offering quick responses, personalized assistance, and a commitment to customer satisfaction. Whether it's product inquiries, returns, or support, TrendHive ensures a smooth and positive experience.</p>
         </div>
     </div>
+
+    <NewsletterBox/>
+
     </div>
   );
 };
